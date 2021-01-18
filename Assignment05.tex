@@ -1,0 +1,103 @@
+\documentclass[tikz,border=2pt,png]{article}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgfplots}
+\begin{document}
+\title{ASSIGNMENT 5}
+\author{Showqeen Yousuf}
+\date{\today}
+\maketitle
+
+\begin{itemize}
+\item{\textbf{Exercise 2.55:}}\\
+
+Let A and B be the centres of two circles of equal Radii 3 such that each one of them passes through the centre of the other. Let them intersect at C and D. Is AB \perp CD:}\\
+
+
+\item{\textbf{Solution:}}\\
+
+$ 
+
+Given, Radii of two circles=3cm$\\
+
+Now,\\
+
+\textit{Steps of Construction are:}\\
+$
+
+1: Taking a fixed point A as radius=3cm.\\
+
+2: Draw a circle O.\\
+
+3: Again taking any point B on circumference of circle C, with radius=3cm draw another circle,intersecting circle O at points C and D.\\
+
+4: Join AB  and CD.\\
+$
+
+
+\begin{centre}
+ \begin{tikzpicture}
+ \draw(-7,0)--(7,0) node[anchor=north west]{x axis};
+ \draw(0,-5)--(0,5) node[anchor=south east]{y axis};
+ \node at (-0.2,0.2){$A$};
+ \node at (3.2,0.2){$B$};
+ \draw[blue] (0,0)--(3,0); 
+ \draw (1.5,2.6)--(1.5,-2.6);
+ \node at (1.5,2.8){$C$};
+ \node at (1.5,-2.8){$D$};
+ \draw (0,0) circle (3 cm);  
+ \draw (3,0) circle (3 cm);
+ \end{tikzpicture}
+\end{centre}\\
+
+\terefore{}& \hspace{3 cm}By Symmetry AB is perpendicular to CD(AB \perp CD).
+
+\newpage
+\item{\textbf{Question 2.56:}}\\
+
+Construct a tangent to a circle of radius 4 units from a point on concentric circle of radius 6 units:
+
+\item{\textbf{Solution:}}\\
+
+Given the radii of two concentric circles of radius 4 units and 6 units respectively,\\
+
+\textit{Steps of Construction:}\\
+$
+
+1: Draw a circle of radius 4 units with centre O.\\
+
+2: Draw a circle of radius 6 units wit taking O as its centre. Locate a point P on this circle and join OP.\\
+
+3: Bisect OP. Let M be the midpoint of PO.\\
+
+4: Taking M as its centre and MO as its radius, draw a cricle. Let it intersect the given circle at points Q and R.\\
+
+5: Join PQ and PR. PQ and PR are the required tangents.
+$\\
+ 
+   From the construction required tangents are given below:\\
+   
+   \begin{centre}
+ \begin{tikzpicture}
+ \draw(-7,0)--(7,0) node[anchor=north west]{x axis};
+ \draw(0,-7)--(0,7) node[anchor=south east]{y axis};
+ \node at (0.3,0.3){$O$};
+ \node at (6.2,0.2){$P$};
+ \node at (3.2,0.2){$M$};
+ \draw (0,0)--(6,0);
+ \draw[dashed](3,0) circle (3 cm);
+ \draw[dashed](3,3.8)--(3,-3.8);
+ \node at (2.7,3.2){$Q$};
+ \node at (2.7,-3.2){$R$};
+ \draw[red] (2.7,2.98)--(6,0);
+ \draw[red] (2.7,-2.98)--(6,0);
+ \draw(0,0) circle (4 cm);  
+ \draw (0,0) circle (6 cm);
+ \end{tikzpicture}
+\end{centre}\\
+ 
+\textit{ PQ and PR are the two tangents to the internal circle from a point P located on the circumference of outer circle.}
+
+\end{itemize}
+\end{document}
